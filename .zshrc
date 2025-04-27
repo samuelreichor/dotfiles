@@ -29,28 +29,26 @@ alias tree='l --tree'
 alias ddev-apply='ddev craft project-config/apply'
 alias ddev-touch='ddev craft project-config/touch'
 alias ddev-clear='ddev craft clear-caches/all'
-
 alias php-apply='php craft project-config/apply'
 alias php-touch='php craft project-config/touch'
 alias php-clear='php craft clear-caches/all'
 
 # Aliases: git
 alias ga='git add'
+alias gaa='ga .'
 alias gb='git branch'
 alias gba='gb --all'
 alias gc='git commit'
-alias gco='git checkout'
-alias gcl='git clone --recursive'
-alias gd='git diff --output-indicator-new=" " --output-indicator-old=" "'
-alias gds='gd --staged'
-alias gi='git init'
+alias gcb='git checkout'
+alias gcbn='git checkout -b'
 alias gl='git log --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(blue)  %D%n%s%n"'
-alias gm='git merge'
-alias gn='git checkout -b'  # new branch
 alias gp='git push'
-alias gr='git reset'
-alias gr0='gr HEAD~'
-alias gs='git status --short'
 alias gu='git pull'
+alias gr='git reset HEAD~'
+alias gs='git status --short'
+alias gcl='git clone --recursive'
 
-
+# Aliases: docker
+alias dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
+alias dl='docker logs --tail=100'
+alias dc='docker compose'

@@ -1,54 +1,55 @@
 [user]
-        email = samuelreichor@gmail.com
-        name = samuelreichor
+email = samuelreichor@gmail.com
+name = samuelreichor
 
 [core]
-    autocrlf = input  # keep newlines as in input
-    compression = 9  # trade cpu for network
-    fsync = none
-    whitespace = error  # threat incorrect whitespace as errors
+autocrlf = input # keep newlines as in input
+compression = 9  # trade cpu for network
+fsync = none
+whitespace = error # threat incorrect whitespace as errors
+pager = less -F -X
 
 [alias]
-        rb = rebase -i --autosquash
-        fix = commit --fixup
-        cb = checkout -b
-        c = checkout
+rb = rebase -i --autosquash
+fix = commit --fixup
+cb = checkout -b
+c = checkout
 
 [push]
-        autoSetupRemote = true
-        default = current  # push only current branch by default
-        followTags = true  # push also tags
+autoSetupRemote = true
+default = current # push only current branch by default
+followTags = true # push also tags
 
 [pull]
-        ff = only
+ff = only
 
 [fetch]
-        prune = true
+prune = true
 
 [diff "lockb"]
-        textconv = bun
-        binary = true
+textconv = bun
+binary = true
 
 [safe]
-        directory = /var/www/html
+directory = /var/www/html
 
 # Colors
 [color "blame"]
-    highlightRecent = black bold,1 year ago,white,1 month ago,default,7 days ago,blue
+highlightRecent = black bold,1 year ago,white,1 month ago,default,7 days ago,blue
 
 [color "branch"]
-    current  = magenta
-    local    = default
-    remote   = yellow
-    upstream = green
-    plain    = blue
+current = magenta
+local = default
+remote = yellow
+upstream = green
+plain = blue
 
 [color "diff"]
-    meta       = black bold
-    frag       = magenta
-    context    = white
-    whitespace = yellow reverse
+meta = black bold
+frag = magenta
+context = white
+whitespace = yellow reverse
 
 # URL shortcuts
 [url "git@github.com:"]
-    insteadOf = "gh:"
+insteadOf = "gh:"
